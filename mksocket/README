@@ -1,0 +1,29 @@
+1. Building
+Run 'make' in the root directory
+
+2. Structure (after make)
+- bin : Binary file mksocket
+- src : Source file
+- build : Object file
+- tools : Python program that sends DGRAM packet to socket and BASH program that sends stream to socket (via 'logger')
+
+3. Usage
+Run 'mksocket --help', which will print the following:
+
+-----------------------------------------------------------------------------------------------
+Usage: mksocket [OPTION...] SOCKET - Name and path to the socket
+
+mksock -- A program to create a socket and print in terminal everything that is
+sent to it.
+
+  -f, --follow               Keep the socket open and output all data sent to
+                             it                                                                                              
+  -s, --stream               Connect socket as a stream instead of datagram                                                  
+                             (default)                                                                                       
+  -?, --help                 Give this help list                                                                             
+      --usage                Give a short usage message
+  -V, --version              Print program version
+
+Report bugs to <henrik.holm@me.com>.
+
+-----------------------------------------------------------------------------------------------
