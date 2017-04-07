@@ -1,0 +1,10 @@
+Host HOSTNAME
+HostName HOSTNAME.FQDN
+Port SSHPORT
+User USERNAME
+IdentityFile /home/USERNAME/.ssh/ID_FILE
+
+Host TUNNELHOST
+User USERNAME
+ProxyCommand ssh HOSTNAME nc -w 120 localhost 11012
+
